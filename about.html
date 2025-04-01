@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Savory Minds</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-xl font-bold text-gray-800">Savory Minds</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="px-3 py-2 text-sm font-medium text-gray-500 hover:text-gray-800">Home</a>
+                        <a href="about.html" class="px-3 py-2 text-sm font-medium text-gray-800 border-b-2 border-orange-500">About</a>
+                        <a href="recipes.html" class="px-3 py-2 text-sm font-medium text-gray-500 hover:text-gray-800">Recipes</a>
+                        <a href="articles.html" class="px-3 py-2 text-sm font-medium text-gray-500 hover:text-gray-800">Articles</a>
+                        <a href="contact.html" class="px-3 py-2 text-sm font-medium text-gray-500 hover:text-gray-800">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button text-gray-500 hover:text-gray-800">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu md:hidden fixed w-full bg-white shadow-lg z-10 mt-16 hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-800">Home</a>
+            <a href="about.html" class="block px-3 py-2 text-base font-medium text-gray-800 bg-gray-100">About</a>
+            <a href="recipes.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-800">Recipes</a>
+            <a href="articles.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-800">Articles</a>
+            <a href="contact.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-800">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">About Savory Minds</h1>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/3">
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" 
+                         alt="Michael Chu" 
+                         class="rounded-full w-64 h-64 object-cover mx-auto shadow-lg">
+                </div>
+                <div class="md:w-2/3">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Michael Chu</h2>
+                    <p class="text-gray-600 mb-4">Professional Chef & Food Scientist</p>
+                    <p class="text-gray-700 mb-6">
+                        With over 15 years of experience in professional kitchens and food research laboratories, 
+                        Michael brings a unique perspective to culinary arts. His mission is to bridge the gap 
+                        between scientific understanding and practical cooking techniques.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        After graduating from the Culinary Institute of America and completing a Master's in Food Science, 
+                        Michael worked in Michelin-starred restaurants before transitioning to food product development 
+                        and culinary education.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-orange-500 hover:text-orange-600">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-orange-500 hover:text-orange-600">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-orange-500 hover:text-orange-600">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Featured Work</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg" 
+                         alt="Molecular Gastronomy" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Molecular Gastronomy</h3>
+                        <p class="text-gray-600 mb-4">Exploring the science behind modernist cuisine techniques</p>
+                        <a href="#" class="text-orange-500 font-medium hover:text-orange-600">View Project →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg" 
+                         alt="Plant-Based Cooking" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Plant-Based Cooking</h3>
+                        <p class="text-gray-600 mb-4">Developing flavorful vegan alternatives to classic dishes</p>
+                        <a href="#" class="text-orange-500 font-medium hover:text-orange-600">View Project →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg" 
+                         alt="Food Preservation" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Food Preservation</h3>
+                        <p class="text-gray-600 mb-4">Traditional and modern methods for extending shelf life</p>
+                        <a href="#" class="text-orange-500 font-medium hover:text-orange-600">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
