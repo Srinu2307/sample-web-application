@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Minds - Culinary Exploration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-bg {
+            background-image: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-xl font-bold text-gray-800">Savory Minds</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="px-3 py-2 text-sm font-medium text-gray-800 border-b-2 border-orange-500">Home</a>
+                        <a href="about.html" class="px-3 py-2 text-sm font-medium text-gray-500 hover:text-gray-800">About</a>
+                        <a href="recipes.html" class="px-3 py-2 text-sm font-medium text-gray-500 hover:text-gray-800">Recipes</a>
+                        <a href="articles.html" class="px-3 py-2 text-sm font-medium text-gray-500 hover:text-gray-800">Articles</a>
+                        <a href="contact.html" class="px-3 py-2 text-sm font-medium text-gray-500 hover:text-gray-800">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-500 hover:text-gray-800">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center pt-16">
+        <div class="max-w-6xl mx-auto px-4 text-white">
+            <div class="bg-black bg-opacity-50 p-8 rounded-lg max-w-2xl">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Explore Culinary Creativity</h1>
+                <p class="text-xl mb-8">Discover recipes, techniques, and food science insights from professional chef Michael Chu</p>
+                <a href="recipes.html" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center">
+                    Start Exploring <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Recipes Section will go here -->
+    <!-- Featured Articles Section will go here -->
+    <!-- Author Bio Section will go here -->
+    <!-- Contact CTA Section will go here -->
+
+    <script src="script.js"></script>
+</body>
+</html>
