@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - Savory Minds</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-xl font-bold text-gray-800">Savory Minds</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="px-3 py-2 text-sm font-medium text-gray-500 hover:text-gray-800">Home</a>
+                        <a href="about.html" class="px-3 py-2 text-sm font-medium text-gray-500 hover:text-gray-800">About</a>
+                        <a href="recipes.html" class="px-3 py-2 text-sm font-medium text-gray-800 border-b-2 border-orange-500">Recipes</a>
+                        <a href="articles.html" class="px-3 py-2 text-sm font-medium text-gray-500 hover:text-gray-800">Articles</a>
+                        <a href="contact.html" class="px-3 py-2 text-sm font-medium text-gray-500 hover:text-gray-800">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button text-gray-500 hover:text-gray-800">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu md:hidden fixed w-full bg-white shadow-lg z-10 mt-16 hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-800">Home</a>
+            <a href="about.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-800">About</a>
+            <a href="recipes.html" class="block px-3 py-2 text-base font-medium text-gray-800 bg-gray-100">Recipes</a>
+            <a href="articles.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-800">Articles</a>
+            <a href="contact.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-800">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-4xl font-bold text-center text-gray-800 mb-4">Recipe Collection</h1>
+            <p class="text-xl text-center text-gray-600 max-w-2xl mx-auto">
+                Discover tested and perfected recipes from professional kitchens
+            </p>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="py-8 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex-1">
+                    <div class="relative">
+                        <input type="text" placeholder="Search recipes..." 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500">
+                        <button class="absolute right-3 top-2 text-gray-400 hover:text-gray-600">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full md:w-64">
+                    <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500">
+                        <option value="">All Categories</option>
+                        <option value="appetizers">Appetizers</option>
+                        <option value="mains">Main Dishes</option>
+                        <option value="desserts">Desserts</option>
+                        <option value="beverages">Beverages</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Grid Section -->
+    <section class="py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Recipe 1 -->
+                <div class="recipe-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg" 
+                             alt="Pancakes with Berries" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 recipe-overlay transition duration-300">
+                            <a href="#" class="bg-orange-500 text-white px-6 py-2 rounded-lg font-medium">View Recipe</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Fluffy Pancakes with Mixed Berries</h3>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>30 mins</span>
+                            <i class="fas fa-utensils ml-4 mr-2"></i>
+                            <span>Breakfast</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Light and airy pancakes topped with fresh seasonal berries and maple syrup.
+                        </p>
+                        <a href="#" class="text-orange-500 font-medium hover:text-orange-600 inline-flex items-center">
+                            Read More <i class="fas fa-chevron-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recipe 2 -->
+                <div class="recipe-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg" 
+                             alt="Pasta Carbonara" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 recipe-overlay transition duration-300">
+                            <a href="#" class="bg-orange-500 text-white px-6 py-2 rounded-lg font-medium">View Recipe</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Classic Spaghetti Carbonara</h3>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>25 mins</span>
+                            <i class="fas fa-utensils ml-4 mr-2"></i>
+                            <span>Main Dish</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Authentic Roman pasta dish with eggs, cheese, pancetta, and black pepper.
+                        </p>
+                        <a href="#" class="text-orange-500 font-medium hover:text-orange-600 inline-flex items-center">
+                            Read More <i class="fas fa-chevron-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recipe 3 -->
+                <div class="recipe-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg" 
+                             alt="Chocolate Cake" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 recipe-overlay transition duration-300">
+                            <a href="#" class="bg-orange-500 text-white px-6 py-2 rounded-lg font-medium">View Recipe</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Decadent Chocolate Cake</h3>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>1 hour 15 mins</span>
+                            <i class="fas fa-utensils ml-4 mr-2"></i>
+                            <span>Dessert</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Rich, moist chocolate cake with chocolate ganache frosting.
+                        </p>
+                        <a href="#" class="text-orange-500 font-medium hover:text-orange-600 inline-flex items-center">
+                            Read More <i class="fas fa-chevron-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recipe 4 -->
+                <div class="recipe-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/1234535/pexels-photo-1234535.jpeg" 
+                             alt="Caesar Salad" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 recipe-overlay transition duration-300">
+                            <a href="#" class="bg-orange-500 text-white px-6 py-2 rounded-lg font-medium">View Recipe</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Classic Caesar Salad</h3>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>20 mins</span>
+                            <i class="fas fa-utensils ml-4 mr-2"></i>
+                            <span>Salad</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Traditional Caesar salad with homemade dressing and croutons.
+                        </p>
+                        <a href="#" class="text-orange-500 font-medium hover:text-orange-600 inline-flex items-center">
+                            Read More <i class="fas fa-chevron-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recipe 5 -->
+                <div class="recipe-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg" 
+                             alt="Beef Steak" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 recipe-overlay transition duration-300">
+                            <a href="#" class="bg-orange-500 text-white px-6 py-2 rounded-lg font-medium">View Recipe</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Perfect Ribeye Steak</h3>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>40 mins</span>
+                            <i class="fas fa-utensils ml-4 mr-2"></i>
+                            <span>Main Dish</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Juicy ribeye steak cooked to perfection with herb butter.
+                        </p>
+                        <a href="#" class="text-orange-500 font-medium hover:text-orange-600 inline-flex items-center">
+                            Read More <i class="fas fa-chevron-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recipe 6 -->
+                <div class="recipe-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg" 
+                             alt="Coffee" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 recipe-overlay transition duration-300">
+                            <a href="#" class="bg-orange-500 text-white px-6 py-2 rounded-lg font-medium">View Recipe</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Artisan Pour Over Coffee</h3>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>10 mins</span>
+                            <i class="fas fa-utensils ml-4 mr-2"></i>
+                            <span>Beverage</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Step-by-step guide to brewing the perfect cup of pour over coffee.
+                        </p>
+                        <a href="#" class="text-orange-500 font-medium hover:text-orange-600 inline-flex items-center">
+                            Read More <i class="fas fa-chevron-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center mt-12">
+                <nav class="flex items-center space-x-2">
+                    <a href="#" class="px-4 py-2 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#" class="px-4 py-2 border border-orange-500 bg-orange-500 text-white rounded-lg">1</a>
+                    <a href="#" class="px-4 py-2 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50">2</a>
+                    <a href="#" class="px-4 py-2 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50">3</a>
+                    <span class="px-2 text-gray-600">...</span>
+                    <a href="#" class="px-4 py-2 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50">8</a>
+                    <a href="#" class="px-4 py-2 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
